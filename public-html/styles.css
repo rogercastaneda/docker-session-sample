@@ -1,0 +1,12 @@
+body {
+  font-family: Arial;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+}
+
+h1 {
+  color: red;
+}

@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  
+  myWebService: 
+    image: httpd:alpine
+    # build: 
+    #   context: .
+    #   dockerfile: Dockerfile
+    container_name: myWebContainer
+    environment:
+      APP_NAME: demoTest
+    volumes: 
+      - ./public-html:/usr/local/apache2/htdocs/
+    ports: 
+      - "8080:80"
+    restart: always
+
